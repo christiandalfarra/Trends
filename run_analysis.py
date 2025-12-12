@@ -2,7 +2,7 @@ import os
 import subprocess
 
 # CONFIGURAZIONE
-DATA_PATH = "/path/to/your/data" # <--- INSERISCI IL TUO PERCORSO QUI
+DATA_PATH = "../datasets" # <--- INSERISCI IL TUO PERCORSO QUI
 DATASET = "A" # Usa "A" per ImageNet-A, "R" per ImageNet-R
 ARCH = "ViT-B/16"
 
