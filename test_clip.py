@@ -8,7 +8,7 @@ import json
 import urllib.request
 
 # CONFIGURAZIONE
-DATASET_PATH = "../datasets/imagenet-adversarial/imagenet-a" 
+DATASET_PATH = "../datasets/imagenet-rendition/imagenet-r" 
 MODEL_NAME = "ViT-B/16" 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
