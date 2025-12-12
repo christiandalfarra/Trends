@@ -40,7 +40,7 @@ def run_cmd(name, args):
         cmd.append(v)
     
     # Salva output in un file log
-    output_dir = f"analysis_logs/{name}"
+    output_dir = f"../Trends/analysis_logs/{name}"
     os.makedirs(output_dir, exist_ok=True)
     cmd.append("--output")
     cmd.append(output_dir)
