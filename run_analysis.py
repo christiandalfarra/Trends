@@ -37,7 +37,8 @@ def run_cmd(name, args):
         "python3", "tpt_classification.py",
         "--test_sets", DATASET,
         "-a", ARCH,
-        "--gpu", "0"
+        "--gpu", "0",
+        "--ctx_init", "a photo of a "
     ]
     
     # Aggiungi gli argomenti specifici dell'esperimento
