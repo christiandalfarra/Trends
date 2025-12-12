@@ -1,7 +1,7 @@
 Use GPU: 0 for training
-Random initialization: initializing a generic context
-Initial context: "X X X X"
-Number of context words (tokens): 4
+Initializing the contect with given words: [a photo of a ]
+Initial context: "a photo of a "
+Number of context words (tokens): 5
 => Model created: visual backbone RN50
 => Using native Torch AMP. Training in mixed precision.
 evaluating: A
@@ -14,13 +14,13 @@ tpt_classification.py:290: FutureWarning: `torch.cuda.amp.autocast(args...)` is 
   with torch.cuda.amp.autocast():
 tpt_classification.py:48: RuntimeWarning: divide by zero encountered in log
   avg_logits = logits.logsumexp(dim=0) - np.log(logits.shape[0]) # avg_logits = logits.mean(0) [1, 1000]
- *  Acc@1 17.787 Acc@5 42.707
-=> Acc. on testset [A]: @1 17.786666870117188/ @5 42.706668853759766
+ *  Acc@1 12.760 Acc@5 27.173
+=> Acc. on testset [A]: @1 12.760000228881836/ @5 27.1733341217041
 ======== Result Summary ========
 params: nstep	lr	bs
 params: 1	0.005	64
 		 [set_id] 		 Top-1 acc. 		 Top-5 acc.
 A	
 
-17.79	
+12.76	
 

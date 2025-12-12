@@ -1,7 +1,7 @@
 Use GPU: 0 for training
-Random initialization: initializing a generic context
-Initial context: "X X X X"
-Number of context words (tokens): 4
+Initializing the contect with given words: [a photo of a ]
+Initial context: "a photo of a "
+Number of context words (tokens): 5
 => Model created: visual backbone RN50
 => Using native Torch AMP. Training in mixed precision.
 evaluating: A
@@ -12,13 +12,13 @@ tpt_classification.py:62: FutureWarning: `torch.cuda.amp.autocast(args...)` is d
   with torch.cuda.amp.autocast():
 tpt_classification.py:290: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
   with torch.cuda.amp.autocast():
- *  Acc@1 16.613 Acc@5 39.987
-=> Acc. on testset [A]: @1 16.613332748413086/ @5 39.98666763305664
+ *  Acc@1 13.347 Acc@5 27.920
+=> Acc. on testset [A]: @1 13.346667289733887/ @5 27.920000076293945
 ======== Result Summary ========
 params: nstep	lr	bs
 params: 1	0.005	64
 		 [set_id] 		 Top-1 acc. 		 Top-5 acc.
 A	
 
-16.61	
+13.35	
 
