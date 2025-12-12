@@ -2,7 +2,7 @@ import os
 import subprocess
 
 # CONFIGURAZIONE
-DATA_PATH = "../datasets" 
+DATA_PATH = "../datasets/imagenet-adversarial" 
 DATASET = "A" 
 ARCH = "ViT-B/16"
 
