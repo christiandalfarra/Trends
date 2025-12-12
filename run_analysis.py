@@ -38,7 +38,8 @@ def run_cmd(name, args):
         "--test_sets", DATASET,
         "-a", ARCH,
         "--gpu", "0",
-        "--ctx_init", "a photo of a "
+        "--ctx_init", "a photo of a",
+        "--tpt"
     ]
     
     # Aggiungi gli argomenti specifici dell'esperimento
