@@ -19,7 +19,7 @@ experiments = {
     
     # 2. Variare la Selection Confidence
     "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "0.005"},
-    "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "0.005"},
+    "conf_0.1": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
     "conf_0.5":  {"-b": "64", "--tta_steps": "1", "--selection_p": "0.5",  "--lr": "0.005"},
     
     # 3. Variare Steps di ottimizzazione -> Parametro --tta_steps
