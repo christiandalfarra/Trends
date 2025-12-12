@@ -28,7 +28,7 @@ experiments = {
 def run_cmd(name, args):
     print(f"\n=== Running Experiment: {name} ===")
     cmd = [
-        "python", "tpt_classification.py",
+        "python3", "tpt_classification.py",
         "--test_sets", DATASET,
         "-a", ARCH,
         "--data", DATA_PATH,
