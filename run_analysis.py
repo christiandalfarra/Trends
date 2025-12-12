@@ -4,7 +4,7 @@ import subprocess
 # CONFIGURAZIONE
 DATA_PATH = "../datasets/imagenet-adversarial" 
 DATASET = "A" 
-ARCH = "ViT-B/16"
+ARCH = "RN50"
 
 # Definisci gli esperimenti
 # CORREZIONI APPLICATE:
@@ -13,16 +13,17 @@ ARCH = "ViT-B/16"
 # --output    -> Rimossa (gestita tramite reindirizzamento file)
 experiments = {
     # 1. Variare le Viste (Augmentations) -> Parametro -b
-    "views_16": {"-b": "16", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "5e-3"},
-    "views_32": {"-b": "32", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "5e-3"},
-    "views_64": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "5e-3"},
+    "views_16": {"-b": "16", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
+    "views_32": {"-b": "32", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
+    "views_64": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
     
     # 2. Variare la Selection Confidence
-    "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "5e-3"},
-    "conf_0.5":  {"-b": "64", "--tta_steps": "1", "--selection_p": "0.5",  "--lr": "5e-3"},
+    "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "0.005"},
+    "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "0.005"},
+    "conf_0.5":  {"-b": "64", "--tta_steps": "1", "--selection_p": "0.5",  "--lr": "0.005"},
     
     # 3. Variare Steps di ottimizzazione -> Parametro --tta_steps
-    "steps_2":   {"-b": "64", "--tta_steps": "2", "--selection_p": "0.1", "--lr": "5e-3"},
+    "steps_2":   {"-b": "64", "--tta_steps": "2", "--selection_p": "0.1", "--lr": "0.005"},
     
     # 4. Variare Learning Rate
     "lr_1e-2":   {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "1e-2"},

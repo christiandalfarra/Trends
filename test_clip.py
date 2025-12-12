@@ -9,7 +9,7 @@ import urllib.request
 import sys
 
 # CONFIGURAZIONE MODELLO
-MODEL_NAME = "ViT-B/16" 
+MODEL_NAME = "RN50" 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def get_args():
