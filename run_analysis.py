@@ -13,21 +13,24 @@ ARCH = "RN50"
 # --output    -> Rimossa (gestita tramite reindirizzamento file)
 experiments = {
     # 1. Variare le Viste (Augmentations) -> Parametro -b
+    "views_8": {"-b": "8", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
     "views_16": {"-b": "16", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
     "views_32": {"-b": "32", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
     "views_64": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
     
     # 2. Variare la Selection Confidence
-    "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "0.005"},
+}
+
+""" "conf_0.05": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.05", "--lr": "0.005"},
     "conf_0.1": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "0.005"},
+    "conf_0.2": {"-b": "64", "--tta_steps": "1", "--selection_p": "0.2", "--lr": "0.005"},
     "conf_0.5":  {"-b": "64", "--tta_steps": "1", "--selection_p": "0.5",  "--lr": "0.005"},
     
     # 3. Variare Steps di ottimizzazione -> Parametro --tta_steps
     "steps_2":   {"-b": "64", "--tta_steps": "2", "--selection_p": "0.1", "--lr": "0.005"},
     
     # 4. Variare Learning Rate
-    "lr_1e-2":   {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "1e-2"},
-}
+    "lr_1e-2":   {"-b": "64", "--tta_steps": "1", "--selection_p": "0.1", "--lr": "1e-2"}, """
 
 def run_cmd(name, args):
     print(f"\n=== Running Experiment: {name} ===")
