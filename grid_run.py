@@ -12,10 +12,10 @@ OUTPUT_DIR = "../Trends/mega_run_logs"
 SUMMARY_FILE = "../Trends/final_summary.csv"
 
 # --- IPERPARAMETRI (GRID SEARCH) ---
-learning_rates = ["0.005"] 
-confidence_values = ["0.1"]
-tta_steps_values = ["1"]
-n_views_values = ["64"]
+learning_rates = ["0.0025","0.005","0.01"] 
+confidence_values = ["0.05","0.1","0.5"]
+tta_steps_values = ["1","2"]
+n_views_values = ["8","16","32","64"]
 
 def parse_accuracy_from_log(log_path):
     """
