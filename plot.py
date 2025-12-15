@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # 1. Carica i dati dal CSV
 # Assicurati che il file sia nella stessa cartella dello script
-file_path = 'continuous_random_classes_analysis_lr1e-05_reset0.csv'
+file_path = 'continuous_analysis_casual_lr0.005_reset0.csv'
 df = pd.read_csv(file_path)
 
 # 2. Imposta la dimensione del grafico
