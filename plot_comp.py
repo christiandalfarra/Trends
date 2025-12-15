@@ -7,7 +7,7 @@ def plot_comparison():
     # Cerca tutti i file CSV generati (adatta il pattern al nome dei tuoi file output)
     # Esempio pattern: "continuous_analysis_*.csv"
     
-    csv_files = glob.glob("risultati_mega_run_on_inar_for_cont/inr_continuous_analysis_*_reset10.csv")
+    csv_files = glob.glob("risultati_mega_run_on_ina_for_cont/continuous_analysis_casual_*.csv")
     
     if not csv_files:
         print("Nessun CSV trovato per il plotting.")
@@ -34,8 +34,8 @@ def plot_comparison():
     plt.legend()
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.savefig("risultati_mega_run_on_inar_for_cont/confronto_reset10.png")
-    print("Grafico salvato come 'confronto_totale.png'")
+    plt.savefig("risultati_mega_run_on_ina_for_cont/confronto_casual.png")
+    print("Grafico salvato come 'confronto_casual.png'")
 
 if __name__ == "__main__":
     plot_comparison()
